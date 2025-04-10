@@ -1,0 +1,5 @@
+brew services start redis
+
+rabbitmqctl status
+
+celery -A app.celery_worker.tasks worker --loglevel=info
